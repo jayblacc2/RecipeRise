@@ -29,4 +29,6 @@ To get started with RecipeRise, simply follow these steps:
 1. Clone the repository:
    ```sh
    git clone https://github.com/YourUsername/RecipeRise.git
+   ```
 
+- Happy cooking!
