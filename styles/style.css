@@ -7,6 +7,13 @@
   --transition: all 0.2s ease;
 }
 
+.fa-user {
+  background-color: #f15025;
+  color: #f2f2f2;
+  border-radius: 50%;
+  padding: 2px 3px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -216,6 +223,10 @@ li {
 .brand-logo {
   width: 200px;
   height: auto;
+
+  @media (max-width: 600px) {
+    width: 100px;
+  }
 }
 
 .search-img {
@@ -227,6 +238,10 @@ li {
   display: flex;
   justify-content: space-between;
   padding-bottom: 0.2rem;
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 }
 
 .primary__nav .nav__link {
@@ -493,4 +508,87 @@ li {
   .footer__left-contents > * {
     margin-bottom: 1.5rem;
   }
+}
+
+/* login form */
+.login__container {
+  display: flex;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+.login__inner-left {
+  flex: 1;
+  height: 100vh;
+}
+
+.login__inner-left .login__img {
+  background: url('../images/content-img/login-desktop.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.signin__inner-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10rem;
+}
+
+.signin__cta-wrapper {
+  width: 500px;
+}
+
+.brand__logo-signin .brand__logo {
+  width: 150px;
+  margin-bottom: 32px;
+}
+
+.signin__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn__signin {
+  display: block;
+  background-color: transparent;
+  border: 1px solid #444;
+  width: 70%;
+  height: 50px;
+  margin: 15px 0;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn__signin-email:hover {
+  background-color: #000;
+}
+
+.btn__signin-email:hover,
+.btn__signin-gmail:hover {
+  color: #f2f2f2;
+}
+
+.btn__signin-gmail:hover {
+  background-color: #2f5af5;
+}
+
+.signup__text {
+  padding-left: 10%;
+}
+
+.signup__text-link {
+  text-decoration: underline;
+}
+.signup__text-link:hover {
+  text-decoration-thickness: 2px ;
 }
