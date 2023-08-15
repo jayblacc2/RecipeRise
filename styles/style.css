@@ -33,13 +33,13 @@ body {
   margin: 0 auto;
   overflow: hidden;
 
-  @media (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     padding: 0 15px;
   }
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -312,7 +312,7 @@ li {
 }
 
 .main__section {
-  margin-top: 8rem;
+  margin-top: 4rem;
 
   @media (max-width: 600px) {
     margin-top: 2rem;
@@ -322,7 +322,7 @@ li {
 .section__banner {
   display: flex;
   flex-wrap: wrap;
-  min-height: 800px;
+  min-height: 600px;
 }
 
 .banner__content {
@@ -590,5 +590,5 @@ li {
   text-decoration: underline;
 }
 .signup__text-link:hover {
-  text-decoration-thickness: 2px ;
+  text-decoration-thickness: 2px;
 }

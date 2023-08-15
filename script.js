@@ -7,6 +7,7 @@ const secNavList = document.querySelector(
 ).firstElementChild;
 
 searchContent.addEventListener('click', (e) => {
+  e.preventDefault();
   showContent.classList.remove('visually-hidden');
   secNavList.style.opacity = 0;
 });
