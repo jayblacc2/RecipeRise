@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1280px;
   margin: 0 auto;
   overflow: hidden;
 
@@ -189,7 +189,13 @@ li {
   box-shadow: 0px 5px 15px rgba(150, 150, 150, 0.5);
 }
 
+.header__nav {
+  position: relative;
+  overflow: visible;
+}
+
 .secondary__nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -197,6 +203,7 @@ li {
 
 .secondary__nav-contents {
   position: relative;
+  overflow: visible;
 }
 
 .hide {
@@ -230,7 +237,7 @@ li {
 }
 
 .search-img {
-  width: 23px;
+  width: 20px;
   height: auto;
 }
 
@@ -305,9 +312,8 @@ li {
   margin-left: 0.5rem;
 }
 
-.form-wrapper button img {
-  width: auto;
-  height: 2.5rem;
+#close__search-content {
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -591,4 +597,41 @@ li {
 }
 .signup__text-link:hover {
   text-decoration-thickness: 2px;
+}
+
+/* Style for the secondary dropdown container */
+.secondary__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+}
+
+.nav__list-dropdown:hover .secondary__dropdown {
+  display: block;
+}
+
+.secondary__dropdown-list {
+  list-style: none;
+}
+
+.secondary__dropdown-list li {
+  padding: 6px 15px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.secondary__dropdown-list li:hover {
+  background-color: #e6e6e6;
+}
+
+.fa-caret-down {
+  margin-left: 5px;
 }
