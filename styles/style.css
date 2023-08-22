@@ -765,10 +765,13 @@ li {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  
+
 }
 
 .checkbox__list-item input[type='checkbox']:checked {
   background-color: var(--primary-color);
+  border: 1px solid #fff;
 }
 
 .overlay__form-checkbox h3 {
