@@ -212,6 +212,7 @@ li {
   transition: all 0.5s ease;
   opacity: 1;
 }
+
 .search__icon-content {
   position: absolute;
   bottom: 7%;
@@ -228,6 +229,41 @@ li {
   display: flex;
   justify-content: space-between;
 }
+
+.nav__list {
+  position: relative;
+}
+
+/* dropdown */
+.dropdown__content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+  font-weight: 400;
+}
+
+.nav__list:hover .dropdown__content {
+  display: block;
+}
+
+.dropdown__content-list li {
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.dropdown__content-list li:hover {
+  background-color: #f4f4f4ea;
+}
+
+/*  */
 
 .brand-logo {
   width: 200px;
@@ -406,7 +442,6 @@ li {
 }
 
 /* section recipes card */
-
 .recipe__card-content {
   position: relative;
 }
@@ -601,39 +636,6 @@ li {
   text-decoration-thickness: 2px;
 }
 
-/* Style for the secondary dropdown container */
-.secondary__dropdown {
-  position: absolute;
-  top: 100%;
-  left: 20%;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: none;
-  z-index: 1000;
-}
-
-.nav__list-dropdown:hover .secondary__dropdown {
-  display: block;
-}
-
-.secondary__dropdown-list {
-  list-style: none;
-}
-
-.secondary__dropdown-list li {
-  padding: 10px 15px;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-}
-
-.secondary__dropdown-list li:hover {
-  background-color: #e6e6e6;
-}
-
 .fa-caret-down {
   margin-left: 5px;
 }
@@ -765,8 +767,6 @@ li {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  
-
 }
 
 .checkbox__list-item input[type='checkbox']:checked {
