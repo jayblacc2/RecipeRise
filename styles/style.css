@@ -81,6 +81,11 @@ li {
   color: var(--primary-color);
 }
 
+button {
+  cursor: pointer;
+  border: none;
+}
+
 .btn {
   display: inline-block;
   background-color: transparent;
@@ -89,8 +94,6 @@ li {
   font-size: 0.775rem;
   line-height: 20px;
   padding: 0.7rem 4.5rem;
-  cursor: pointer;
-  border: none;
   font-family: 'Roboto Slab', sans-serif;
   transition: var(--transition);
   letter-spacing: 1px;
@@ -242,7 +245,7 @@ li {
   left: 0;
   background-color: #fff;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  min-width: 200px;
+  min-width: 220px;
   font-weight: 400;
 }
 
@@ -251,6 +254,7 @@ li {
 }
 
 .dropdown__content-list li {
+  /* font-family: 'Montserrat', sans-serif; */
   padding: 10px 15px;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -280,6 +284,7 @@ li {
 }
 
 .primary__nav {
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   justify-content: space-between;
   padding-bottom: 0.2rem;
@@ -290,10 +295,10 @@ li {
 }
 
 .primary__nav .nav__link {
-  font-family: 'roboto';
+  font-family: inherit;
   text-transform: uppercase;
+  font-size: 0.7rem;
   font-weight: 500;
-  font-size: 0.85rem;
   margin-right: 2.2rem;
 }
 
@@ -458,6 +463,53 @@ li {
   background-color: var(--color-muted);
   display: block;
   margin: -1.3rem 0;
+}
+
+.card {
+  position: relative;
+}
+
+.card__icon {
+  position: absolute;
+  top: 5%;
+  right: 15%;
+  width: 3rem;
+  height: 3rem;
+
+  border: 0;
+
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.card__icon-save {
+  background-color: var(--primary-color);
+  color: var(--color-sidebar);
+  display: block;
+  font-size: 1.1rem;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  -moz-border-radius: inherit;
+  -ms-border-radius: inherit;
+  -o-border-radius: inherit;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.card:hover .card__icon-save {
+  background-color: #f26a45;
+  font-size: 1.5rem;
 }
 
 /* Footer */

@@ -10,7 +10,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./styles/style.css">
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto+Slab:wght@400;500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;500;700&family=SourceSansPro:wght@400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -19,55 +19,160 @@
 
 <body>
   <header class="header">
-    <div class="container">
-      <nav class="header__nav">
-        <div class="secondary__nav">
-          <span class="brand"><a href="#home"><img class="brand-logo" src="images/logo.png" alt=""></a>
-          </span>
-          <div class="secondary__nav-contents">
-            <div class="nav__lists visually-hidden">
-              <li class="nav__list" id="show-content">
-                <a href="#" class="nav__link"><img src="images/search-icon.png" alt="" class="search-img"></a>
-              </li>
-              <span>
+    <nav class="header__nav container">
+      <div class="secondary__nav">
+        <span class="brand"><a href="#home"><img class="brand-logo" src="images/logo.png" alt=""></a>
+        </span>
+        <div class="secondary__nav-contents">
+          <ul class="nav__lists visually-hidden">
+            <li class="nav__list" id="show-content">
+              <a href="#" class="nav__link"><img src="images/search-icon.png" alt="" class="search-img"></a>
+            </li>
+            <li class="nav__list">
+              <a href="./login.html" class="nav__link">
                 <i class="fa-solid fa-user"></i>
-                <a href="./login.html" class="nav__link">
-                  Log In</a></span>
-              <li><a href="#" class="nav__link">Magazine<i class="fa-solid fa-caret-down"></i></a></li>
-              <li><img src="" alt=""><a href="#" class="nav__link">Newsletter</a></li>
-              <li><img src="" alt=""><a href="#" class="nav__link">Sweeptakes</a></li>
-                </div>
-            <form class="search__icon-content visually-hidden">
-              <div class="form-wrapper">
-                <label for="search">Search</label>
-                <div class="input-group">
-                  <input type="search" id="search" name="search" placeholder="What are you looking for">
-                  <span class="search__icon-box">
-                    <img src="images/search.svg" alt="search-button-icon" class="search-img">
-                  </span>
-                </div>
-                <button id="close__search-content"><img src="images/multiply.png" alt="close-button"></button>
+                Log In</a>
+            </li>
+
+            <li class="nav__list nav__list-dropdown">
+              <a href="#" class="nav__link">Magazine<i class="fa-solid fa-caret-down"></i></a>
+              <div class="dropdown__content">
+                <ul class="dropdown__content-list">
+                  <li><a href="#">Subscribe</a></li>
+                  <li><a href="#">Manage Subscription</a></li>
+                  <li><a href="#">Gift Subscription</a></li>
+                  <li><a href="#">Need Help</a></li>
+                </ul>
               </div>
-            </form>
-          </div>
-        </div>
-        <div class="primary__nav">
-          <ul class="nav__lists">
-            <li class="nav__list"><a href="#" class="nav__link">dinners</a></li>
-            <li class="nav__list"><a href="#" class="nav__link">Meals</a></li>
-            <li class="nav__list"><a href="#" class="nav__link">Ingredients</a></li>
-            <li class="nav__list"><a href="#" class="nav__link">Occassions</a></li>
-            <li class="nav__list"><a href="#" class="nav__link">cuisines</a></li>
-            <li class="nav__list"><a href="#" class="nav__link">kitchen tips</a></li>
-            <li class="nav__list"><a href="#" class="nav__link">news</a></li>
-            <li class="nav__list"><a href="#" class="nav__link">features</a></li>
-            <li class="nav__list"><a href="#" class="nav__link">about us</a></li>
+            </li>
+            <li class="nav__list"><img src="" alt=""><a href="#" class="nav__link">Newsletter</a></li>
+            <li class="nav__list"><img src="" alt=""><a href="#" class="nav__link">Sweeptakes</a></li>
           </ul>
-          <span class="nav__info"><a href="#" class="nav__link nav__info-link color--primary">Get the
-              magazine</a></span>
+          <form class="search__icon-content visually-hidden">
+            <div class="form-wrapper">
+              <label for="search">Search</label>
+              <div class="input-group">
+                <input type="search" id="search" name="search" placeholder="What are you looking for">
+                <span class="search__icon-box">
+                  <img src="images/search.svg" alt="search-button-icon" class="search-img">
+                </span>
+              </div>
+              <button class="close-btn" id="close__search-content"><i
+                  class="fa-solid fa-xmark close-button"></i></button>
+            </div>
+          </form>
         </div>
-      </nav>
-    </div>
+      </div>
+      <div class="primary__nav">
+        <ul class="nav__lists">
+          <li class="nav__list"><a href="#" class="nav__link">dinners</a>
+            <div class="dropdown__content">
+              <ul class="dropdown__content-list">
+                <li><a href="#">Comfort Food</a></li>
+                <li><a href="#">Main Dish</a></li>
+                <li><a href="#">Quick &amp Easy</a></li>
+                <li><a href="#">Soup, Stew &amp Chilli</a></li>
+                <li><a href="#">30-Minute Meal</a></li>
+                <li><a href="#">One-Pot Meal</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__list"><a href="#" class="nav__link">Meals</a>
+            <div class="dropdown__content">
+              <ul class="dropdown__content-list">
+                <li><a href="#">Comfort Food</a></li>
+                <li><a href="#">Main Dish</a></li>
+                <li><a href="#">Quick &amp Easy</a></li>
+                <li><a href="#">Soup, Stew &amp Chilli</a></li>
+                <li><a href="#">30-Minute Meal</a></li>
+                <li><a href="#">One-Pot Meal</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__list"><a href="#" class="nav__link">Ingredients</a>
+            <div class="dropdown__content">
+              <ul class="dropdown__content-list">
+                <li><a href="#">Comfort Food</a></li>
+                <li><a href="#">Main Dish</a></li>
+                <li><a href="#">Quick &amp Easy</a></li>
+                <li><a href="#">Soup, Stew &amp Chilli</a></li>
+                <li><a href="#">30-Minute Meal</a></li>
+                <li><a href="#">One-Pot Meal</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__list"><a href="#" class="nav__link">Occassions</a>
+            <div class="dropdown__content">
+              <ul class="dropdown__content-list">
+                <li><a href="#">Comfort Food</a></li>
+                <li><a href="#">Main Dish</a></li>
+                <li><a href="#">Quick &amp Easy</a></li>
+                <li><a href="#">Soup, Stew &amp Chilli</a></li>
+                <li><a href="#">30-Minute Meal</a></li>
+                <li><a href="#">One-Pot Meal</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__list"><a href="#" class="nav__link">cuisines</a>
+            <div class="dropdown__content">
+              <ul class="dropdown__content-list">
+                <li><a href="#">Chinese</a></li>
+                <li><a href="#">African</a></li>
+                <li><a href="#">italian</a></li>
+                <li><a href="#">Indian</a></li>
+                <li><a href="#">Japanes</a></li>
+                <li><a href="#">Filipino</a></li>
+                <li><a href="#" class="nav__link">VIEW ALL</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__list"><a href="#" class="nav__link">kitchen tips</a>
+            <div class="dropdown__content">
+              <ul class="dropdown__content-list">
+                <li><a href="#">Comfort Food</a></li>
+                <li><a href="#">Main Dish</a></li>
+                <li><a href="#">Quick &amp Easy</a></li>
+                <li><a href="#">Soup, Stew &amp Chilli</a></li>
+                <li><a href="#">30-Minute Meal</a></li>
+                <li><a href="#">One-Pot Meal</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__list"><a href="#" class="nav__link">news</a>
+            <div class="dropdown__content">
+              <ul class="dropdown__content-list">
+                <li><a href="#">Comfort Food</a></li>
+                <li><a href="#">Main Dish</a></li>
+                <li><a href="#">Quick &amp Easy</a></li>
+                <li><a href="#">Soup, Stew &amp Chilli</a></li>
+                <li><a href="#">30-Minute Meal</a></li>
+                <li><a href="#">One-Pot Meal</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__list"><a href="#" class="nav__link">features</a>
+            <div class="dropdown__content">
+              <ul class="dropdown__content-list">
+                <li><a href="#">Dinner Fix</a></li>
+                <li><a href="#">Sweet Spot</a></li>
+                <li><a href="#">In the Kitchen</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__list"><a href="#" class="nav__link">About us</a>
+            <div class="dropdown__content">
+              <ul class="dropdown__content-list">
+                <li><a href="#">Allstars</a></li>
+                <li><a href="#">How to Add Recipe</a></li>
+
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <span class="nav__info"><a href="#" class="nav__link nav__info-link color--primary">Get the
+            magazine</a></span>
+      </div>
+    </nav>
   </header>
   <main class="main__section">
     <section class="section__banner container">
@@ -113,6 +218,9 @@
       </a>
       <div class="gallery__cards">
         <a href="#" class="card">
+          <button class="card__icon">
+            <i class="fa-regular fa-heart card__icon-save"></i>
+          </button>
           <figure class="card__img">
             <img src="images/content-img/g-1.webp" alt="gallery-image">
           </figure>
@@ -123,6 +231,9 @@
           </div>
         </a>
         <a href="#" class="card">
+          <button class="card__icon">
+            <i class="fa-regular fa-heart card__icon-save"></i>
+          </button>
           <figure class="card__img">
             <img src="images/content-img/g-2.webp" alt="gallery-image">
           </figure>
@@ -133,6 +244,9 @@
           </div>
         </a>
         <a href="#" class="card">
+          <button class="card__icon">
+            <i class="fa-regular fa-heart card__icon-save"></i>
+          </button>
           <figure class="card__img">
             <img src="images/content-img/g-3.webp" alt="gallery-img">
           </figure>
@@ -143,6 +257,9 @@
           </div>
         </a>
         <a href="#" class="card">
+          <button class="card__icon">
+            <i class="fa-regular fa-heart card__icon-save"></i>
+          </button>
           <figure class="card__img">
             <img src="images/content-img/g-2.webp" alt="gallery-image">
           </figure>
@@ -153,6 +270,9 @@
           </div>
         </a>
         <a href="#" class="card">
+          <button class="card__icon">
+            <i class="fa-regular fa-heart card__icon-save"></i>
+          </button>
           <figure class="card__img">
             <img src="images/content-img/g-3.webp" alt="gallery-image">
           </figure>
@@ -163,6 +283,9 @@
           </div>
         </a>
         <a href="#" class="card">
+          <button class="card__icon">
+            <i class="fa-regular fa-heart card__icon-save"></i>
+          </button>
           <figure class="card__img">
             <img src="images/content-img/g-1.webp" alt="gallery-image">
           </figure>
@@ -229,12 +352,12 @@
         <span class="brand__logo">
           <a href="#home"><img class="brand-logo text-center" src="images/logo.png" alt=""></a>
         </span>
-        <form action="" class="modal">
-          <button class="btn btn__outline modal__btn">
+        <div class="modal">
+          <button class="btn btn__outline modal__btn-toggle">
             newsletter
           </button>
           <!-- Modal here -->
-        </form>
+        </div>
         <div class="subscribe__img">
           <a href="">
             <img src="images/content-img/footer-img.webp" alt="subscribe-img">
@@ -273,6 +396,48 @@
         </ul>
       </div>
   </footer>
+  <div class="overlay visually-hidden">
+    <div class="overlay__content-wrapper modal-window visually-hidden">
+      <div class="overlay__content">
+        <div class="overlay__content-heading">
+          <p class="overlay__content-title">Newletter Sign Up</p>
+          <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="overlay__form-content">
+          <header class="overlay__content-header">
+            <span class="brand"><a href="#home"><img class="brand-logo" src="images/logo.png" alt="logo"></a>
+            </span>
+            <p class="text">Get the latest on food trends, healthy recipes, holiday ideas, and easy-to-make meals! </p>
+          </header>
+          <form action="" class="overlay__content-form">
+            <div class="overlay__form-control">
+              <label for="overlayEmail" class="overlay__email-label">Email Address</label>
+              <input class="overlay__email-input" type="text" id="overlayEmail" placeholder="yourname@email.com" />
+            </div>
+            <div class="checkbox__wrapper overlay__form-checkbox">
+              <h3 class="checkbox__title text-center">Newsletter Subscriptions</h3>
+              <ul class="checkbox__list my-1">
+                <li class="checkbox__list-item"><input class="checkbox__item" name="checkbox" type="checkbox"
+                    value="dinner">Dinner Tonight</li>
+                <li class="checkbox__list-item"><input class="checkbox__item" name="checkbox" type="checkbox"
+                    value="dinner">Well Seasoned</li>
+                <li class="checkbox__list-item"><input class="checkbox__item" name="checkbox" type="checkbox"
+                    value="dinner">kitchen Fix</li>
+                <li class="checkbox__list-item"><input class="checkbox__item" name="checkbox" type="checkbox"
+                    value="dinner">The Food Feed</li>
+                <li class="checkbox__list-item"><input class="checkbox__item" name="checkbox" type="checkbox"
+                    value="dinner">Easy Eat</li>
+              </ul>
+
+            </div>
+
+            <button class="btn overlay__btn-sub my-2">Sign up</button>
+          </form>
+
+        </div>
+      </div> <!-- here ends the inner-content that overflow-y -->
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 
